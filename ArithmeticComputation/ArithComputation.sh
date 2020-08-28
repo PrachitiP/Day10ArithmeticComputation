@@ -18,3 +18,8 @@ echo "third number:"$Number3
 
 Result1=$(($number1+$number2*$number3))
 echo "Result of operation1 is:"$Result1
+
+# UseCase 3 => computing operation 2
+
+Result2=$(($number1*$number2+$number3))
+echo "Result of operation2 is:"$Result2
