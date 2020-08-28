@@ -44,3 +44,14 @@ Dict[var3]=$Result3
 Dict[var4]=$Result4
 
 echo ${Dict[@]}
+
+# UseCase 7 => Store Results in Array 
+#storing dictionary in array
+count=0
+for i in ${Dict[@]}
+do
+	Array[((count++))]=$i
+done
+
+#printing array elements
+echo "Array elements are:" ${Array[@]}
