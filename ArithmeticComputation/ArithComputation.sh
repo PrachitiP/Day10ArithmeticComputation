@@ -33,3 +33,14 @@ echo "Result of operation2 is:"$Result3
 
 Result4=$(($number1%$number2+$number3))
 echo "Result of operation4 is:"$Result4
+
+# UseCase 6 => Store results in Dictionary
+
+declare -A Dict
+
+Dict[var1]=$Result1
+Dict[var2]=$Result2
+Dict[var3]=$Result3
+Dict[var4]=$Result4
+
+echo ${Dict[@]}
