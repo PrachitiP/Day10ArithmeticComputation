@@ -57,13 +57,13 @@ done
 #printing array elements
 echo "Array elements are:" ${Array[@]}
 
-# Usecase 8 => Sort in Ascending Order
-
+# UseCase 8 => Descending Order
+#sorting in descending order
 for((i=0;i<4;i++))
 do
 	for((j = 0; j<4-i-1; j++))
 	do
-		if [ ${Array[j]} -gt ${Array[$((j+1))]} ]
+		if [ ${Array[j]} -lt ${Array[$((j+1))]} ]
 		then
 			temp=${Array[j]}
 			Array[$j]=${Array[$((j+1))]}
@@ -71,4 +71,5 @@ do
 		fi
 	done
 done
-echo "Sorted Array in ascending order:" ${Array[@]}
+echo "Sorted Array in descending order:" ${Array[@]}
+
