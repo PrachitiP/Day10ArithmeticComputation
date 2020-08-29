@@ -23,3 +23,8 @@ echo "Result of operation1 is:"$Result1
 
 Result2=$(($number1*$number2+$number3))
 echo "Result of operation2 is:"$Result2
+
+# UseCase 4 => computing operation 3
+
+Result3=$(($number3+$number1/$number2))
+echo "Result of operation2 is:"$Result3
