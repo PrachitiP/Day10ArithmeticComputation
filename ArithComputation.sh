@@ -13,3 +13,8 @@ echo "entered numbers are:"
 echo "first number:"$Number1
 echo "second number:"$Number2
 echo "third number:"$Number3
+
+# UseCase 2 => computing operation 1
+
+Result1=$(($number1+$number2*$number3))
+echo "Result of operation1 is:"$Result1
